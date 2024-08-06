@@ -1,0 +1,94 @@
+:set -package aeson
+:set -package async
+:set -package bytestring
+:set -package network
+:set -package stm
+:set -package streaming
+:set -package terminfo
+:set -package text
+:set -package transformers
+:set -package unix
+:set -package vector
+:set -XApplicativeDo
+:set -XArrows
+:set -XBangPatterns
+:set -XBlockArguments
+:set -XConstraintKinds
+:set -XDataKinds
+:set -XDeepSubsumption
+:set -XDefaultSignatures
+:set -XDeriveAnyClass
+:set -XDeriveDataTypeable
+:set -XDeriveFoldable
+:set -XDeriveFunctor
+:set -XDeriveGeneric
+:set -XDeriveLift
+:set -XDeriveTraversable
+:set -XDerivingStrategies
+:set -XDerivingVia
+:set -XEmptyCase
+:set -XEmptyDataDecls
+:set -XEmptyDataDeriving
+:set -XExplicitForAll
+:set -XFlexibleContexts
+:set -XFlexibleInstances
+:set -XForeignFunctionInterface
+:set -XGADTs
+:set -XGeneralizedNewtypeDeriving
+:set -XGHCForeignImportPrim
+:set -XImportQualifiedPost
+:set -XImpredicativeTypes
+:set -XInstanceSigs
+:set -XLambdaCase
+:set -XLexicalNegation
+:set -XLiberalTypeSynonyms
+:set -XListTuplePuns
+:set -XMagicHash
+:set -XMonadComprehensions
+:set -XMultilineStrings
+:set -XMultiWayIf
+:set -XNamedFieldPuns
+:set -XNoMonomorphismRestriction
+:set -XNPlusKPatterns
+:set -XNumDecimals
+:set -XNumericUnderscores
+:set -XOverloadedLabels
+:set -XOverloadedLists
+:set -XOverloadedRecordDot
+:set -XOverloadedRecordUpdate
+:set -XOverloadedStrings
+:set -XPackageImports
+:set -XParallelArrays
+:set -XParallelListComp
+:set -XPartialTypeSignatures
+:set -XPatternSynonyms
+:set -XPolyKinds
+:set -XPostfixOperators
+:set -XQualifiedDo
+:set -XQuantifiedConstraints
+:set -XQuasiQuotes
+:set -XRankNTypes
+:set -XRecordWildCards
+:set -XRecursiveDo
+:set -XRelaxedLayout
+:set -XScopedTypeVariables
+:set -XStandaloneKindSignatures
+:set -XStarIsType
+:set -XStaticPointers
+:set -XTemplateHaskell
+:set -XTemplateHaskellQuotes
+:set -XTransformListComp
+:set -XTupleSection
+:set -XTypeAbstractions
+:set -XTypeApplications
+:set -XTypeData
+:set -XTypeFamilies
+:set -XTypeFamilyDependencies
+:set -XTypeOperators
+:set -XUnboxedSums
+:set -XUnboxedTuples
+:set -XUnicodeSyntax
+:set -XUnliftedDataTypes
+:set -XUnliftedNewtypes
+:set -XUnliftedFFITypes
+:set -XViewPatterns

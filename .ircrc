@@ -1,0 +1,2 @@
+bind ^W delete_previous_word
+nick nyc
