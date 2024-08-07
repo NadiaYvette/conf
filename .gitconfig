@@ -24,3 +24,5 @@
 	program = /run/current-system/sw/bin/gpg
 [log]
 	showSignature = true
+[status]
+	showUntrackedFiles = no
