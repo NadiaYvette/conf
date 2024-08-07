@@ -13,7 +13,6 @@
 	# helper = /usr/local/share/gcm-core/git-credential-manager-core
 	helper = /run/current-system/sw/bin/git-credential-manager
 	credentialStore = gpg
-	helper = 
 	helper = /nix/store/35hngj3wvlknsg6wfvq82pgravgdk21r-git-credential-manager-2.5.1/lib/git-credential-manager/git-credential-manager
 [safe]
 	directory = /nix/store/bbxzd4vn031qxmh0gsl45gqkkhks92hc-ede
@@ -26,3 +25,72 @@
 	showSignature = true
 [status]
 	showUntrackedFiles = no
+
+# Cardano remotes. More repos than just node may be helpful.
+# My own fork isn't used very often. People mostly want to be able to
+# see the CI runs etc. within a brnch in the original upstream.
+[remote "cardano-node"]
+	url = git@github.com:IntersectMBO/cardano-node
+	fetch = +refs/heads/*:refs/remotes/cardano-node/*
+[remote "nyc-node"]
+	url = git@github.com:NadiaYvette/cardano-node
+	fetch = +refs/heads/*:refs/remotes/nyc-node/*
+[remote "local-node"]
+        url = /home/nyc/src/cardano-node
+        fetch = +refs/heads/*:refs/remotes/local-node/*
+
+# Haskell streaming, both my fork and upstream.
+[remote "nyc-streaming"]
+        url = https://github.com/NadiaYvette/streaming
+        fetch = +refs/heads/*:refs/remotes/nyc-streaming/*
+[remote "haskell-streaming"]
+        url = https://github.com/haskell-streaming/streaming
+        fetch = +refs/heads/*:refs/remotes/haskell-streaming/*
+[remote "local-streaming"]
+        url = /home/nyc/src/streaming
+        fetch = +refs/heads/*:refs/remotes/local-streaming/*
+
+# Upstream clash and my fork. Project 1 I need to get back to.
+[remote "upstream-clash"]
+        url = git@github.com:clash-lang/clash-compiler/
+        fetch = +refs/heads/*:refs/remotes/upstream-clash/*
+[remote "nyc-clash"]
+        url = git@github.com:NadiaYvette/clash-compiler/
+        fetch = +refs/heads/*:refs/remotes/nyc-clash/*
+[remote "local-clash"]
+        url = /home/nyc/src/clash-compiler
+        fetch = +refs/heads/*:refs/remotes/local-clash/*
+
+# Upstream cabal and my fork. Project 2 I need to get back to.
+[remote "upstream-cabal"]
+        url = git@github.com:haskell/cabal
+        fetch = +refs/heads/*:refs/remotes/upstream-cabal/*
+[remote "nyc-cabal"]
+        url = git@github.com:NadiaYvette/cabal
+        fetch = +refs/heads/*:refs/remotes/nyc-cabal/*
+[remote "local-cabal"]
+        url = /home/nyc/src/cabal
+        fetch = +refs/heads/*:refs/remotes/local-cabal/*
+
+# Upstream hegg and my fork. Project 3 I need to get back to.
+[remote "nyc-hegg"]
+        url = git@github.com:NadiaYvette/hegg.git
+        fetch = +refs/heads/*:refs/remotes/nyc-hegg/*
+[remote "upstream-hegg"]
+        url = git@github.com:alt-romes/hegg.git
+        fetch = +refs/heads/*:refs/remotes/upstream-hegg/*
+[remote "local-hegg"]
+        url = /home/nyc/src/hegg
+        fetch = +refs/heads/*:refs/remotes/local-hegg/*
+
+# Upstream conf and my fork. Project 2 I need to get back to.
+[remote "upstream-conf"]
+        url = git@github.com:ntc2/conf
+        fetch = +refs/heads/*:refs/remotes/upstream-conf/*
+[remote "nyc-conf"]
+        url = git@github.com:NadiaYvette/conf
+        fetch = +refs/heads/*:refs/remotes/nyc-conf/*
+# Will this be necessary with a submodule?
+[remote "local-conf"]
+        url = /home/nyc/conf
+        fetch = +refs/heads/*:refs/remotes/local-conf/*
